@@ -16,6 +16,7 @@ void Game::initVariables()
 	this->mouseHeld = false;
 }
 
+//Function which creates the window
 void Game::initWindow()
 {
 	this->videoMode.height = 800;
@@ -25,6 +26,7 @@ void Game::initWindow()
 	this->window->setFramerateLimit(60);
 }
 
+//Functions which chcecks if the font has loaded properly
 void Game::initFonts()
 {
 	if (!this->font.loadFromFile("Fonts/Bebas-Regular.ttf"))
@@ -99,6 +101,7 @@ void Game::spawnEnemy()
 	//Randomize enemy type
 	int type = rand() % 5;
 
+	//changing properties for every color
 	switch (type)
 	{
 	case 0:
@@ -177,6 +180,7 @@ void Game::updateMousePositions()
 	this->mousePosView = this->window->mapPixelToCoords(this->mousePosWindow);
 }
 
+//Updating text everytime points are increasing or health is decreasing
 void Game::updateText()
 {
 	std::stringstream ss;
