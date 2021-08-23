@@ -104,26 +104,38 @@ void Game::spawnEnemy()
 	case 0:
 		this->enemy.setSize(sf::Vector2f(10.f, 10.f));
 		this->enemy.setFillColor(sf::Color::Red);
+		this->enemy.setOutlineColor(sf::Color::White);
+		this->enemy.setOutlineThickness(5);
 		break;
 	case 1:
 		this->enemy.setSize(sf::Vector2f(30.f, 30.f));
 		this->enemy.setFillColor(sf::Color::Blue);
+		this->enemy.setOutlineColor(sf::Color::White);
+		this->enemy.setOutlineThickness(5);
 		break;
 	case 2:
 		this->enemy.setSize(sf::Vector2f(50.f, 50.f));
 		this->enemy.setFillColor(sf::Color::Cyan);
+		this->enemy.setOutlineColor(sf::Color::White);
+		this->enemy.setOutlineThickness(5);
 		break;
 	case 3:
 		this->enemy.setSize(sf::Vector2f(70.f, 70.f));
 		this->enemy.setFillColor(sf::Color::Magenta);
+		this->enemy.setOutlineColor(sf::Color::White);
+		this->enemy.setOutlineThickness(5);
 		break;
 	case 4:
 		this->enemy.setSize(sf::Vector2f(100.f, 100.f));
 		this->enemy.setFillColor(sf::Color::Green);
+		this->enemy.setOutlineColor(sf::Color::White);
+		this->enemy.setOutlineThickness(5);
 		break;
 	default:
 		this->enemy.setSize(sf::Vector2f(100.f, 100.f));
 		this->enemy.setFillColor(sf::Color::Yellow);
+		this->enemy.setOutlineColor(sf::Color::White);
+		this->enemy.setOutlineThickness(5);
 		break;
 	}
 
