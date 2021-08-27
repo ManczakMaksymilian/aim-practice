@@ -1,2 +1,2 @@
 # aim-practice
-Simple SFML C++ game which can help you in practicing your aim
+C++ game made using SFML library which can help you in practicing your aim
